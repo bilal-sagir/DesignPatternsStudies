@@ -1,0 +1,86 @@
+//
+//  Builder.swift
+//  DesignPatternsStudies
+//
+//  Created by Bilal on 1.06.2024.
+//
+
+import Foundation
+class BuilderStudy {
+
+    static func htmlFormatterWithoutBuilder() {
+        let hello = "hello"
+        var result: String = "<p>\(hello) </p>"
+        print(result)
+        
+        let words = ["hello", "world"]
+
+        result = "<ul>\n"
+        for word in words {
+            result.append("<li>\(word)</li>\n")
+        }
+        result.append("</ul>")
+        print(result)
+    }
+    
+    static func htmlFormatterWithBuilderPattern() {
+        let builder = HtmlBuilder(rootName: "ul")
+        builder.addChild(name: "li", text: "hello")
+        builder.addChild(name: "li", text: "word")
+        print(builder)
+    }
+}
+
+class HtmlElement: CustomStringConvertible {
+    var name = ""
+    var text = ""
+    var elements = [HtmlElement]()
+    private let indentSize = 2
+    init() {}
+    init(name: String, text: String) {
+        self.name = name
+        self.text = text
+    }
+    private func description(_ indent: Int) -> String {
+        var result = ""
+        let i = String(repeating: " ", count: indent)
+        result += "\(i)<\(name)>\n"
+        if !text.isEmpty {
+            result += String(repeating: " ", count: indentSize * (indent + 1))
+            result += text
+            result += "\n"
+        }
+        for e in elements {
+            result += e.description(indent + 1)
+        }
+        result += "\(i)</\(name)>\n"
+        return result
+    }
+    
+    public var description: String {
+        return description(0)
+    }
+}
+
+class HtmlBuilder: CustomStringConvertible {
+    private let rootName: String
+    var root = HtmlElement()
+    
+    init(rootName: String) {
+        self.rootName = rootName
+        root.name = rootName
+    }
+    
+    func addChild(name: String, text: String) {
+        let e = HtmlElement(name: name, text: text)
+        root.elements.append(e)
+    }
+    
+    var description: String {
+        return root.description
+    }
+    
+    func clear() {
+        root = HtmlElement(name: rootName, text: "")
+    }
+}
