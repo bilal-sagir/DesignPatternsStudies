@@ -25,8 +25,9 @@ class BuilderStudy {
     
     static func htmlFormatterWithBuilderPattern() {
         let builder = HtmlBuilder(rootName: "ul")
-        builder.addChild(name: "li", text: "hello")
-        builder.addChild(name: "li", text: "word")
+        builder
+            .addChildFluent(name: "li", text: "hello")
+            .addChildFluent(name: "li", text: "word")
         print(builder)
     }
 }
@@ -74,6 +75,12 @@ class HtmlBuilder: CustomStringConvertible {
     func addChild(name: String, text: String) {
         let e = HtmlElement(name: name, text: text)
         root.elements.append(e)
+    }
+    
+    @discardableResult func addChildFluent(name: String, text: String) -> HtmlBuilder {
+        let e = HtmlElement(name: name, text: text)
+        root.elements.append(e)
+        return self
     }
     
     var description: String {
