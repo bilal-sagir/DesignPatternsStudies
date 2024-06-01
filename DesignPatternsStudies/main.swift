@@ -9,5 +9,6 @@ import Foundation
 
 //MARK: - Builder
 //BuilderStudy.htmlFormatterWithoutBuilder()
-BuilderStudy.htmlFormatterWithBuilderPattern()
-
+//BuilderStudy.htmlFormatterWithBuilderPattern()
+//BuilderStudy.personBuilderExample()
+BuilderStudy.exercise()
