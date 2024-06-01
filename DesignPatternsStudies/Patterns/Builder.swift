@@ -31,7 +31,7 @@ class BuilderStudy {
         print(builder)
     }
     
-    static func personBuilderExample() {
+    static func personFacetedBuilderExample() {
         let personBuilder = PersonBuilder()
         let person = personBuilder
             .lives
