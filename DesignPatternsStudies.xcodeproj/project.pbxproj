@@ -11,6 +11,7 @@
 		9C34CEFA2C0B8AAA009891F7 /* Builder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C34CEF92C0B8AAA009891F7 /* Builder.swift */; };
 		9C34CEFD2C0BF423009891F7 /* Factory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C34CEFC2C0BF423009891F7 /* Factory.swift */; };
 		9C34CEFF2C0BFD66009891F7 /* AbstractFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C34CEFE2C0BFD66009891F7 /* AbstractFactory.swift */; };
+		9CB644EF2C87AEF9005E26DE /* Singleton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CB644EE2C87AEF9005E26DE /* Singleton.swift */; };
 		9CFBD9F92C1F76F700E98CAD /* Prototype.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CFBD9F82C1F76F700E98CAD /* Prototype.swift */; };
 /* End PBXBuildFile section */
 
@@ -32,6 +33,7 @@
 		9C34CEF92C0B8AAA009891F7 /* Builder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Builder.swift; sourceTree = "<group>"; };
 		9C34CEFC2C0BF423009891F7 /* Factory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Factory.swift; sourceTree = "<group>"; };
 		9C34CEFE2C0BFD66009891F7 /* AbstractFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AbstractFactory.swift; sourceTree = "<group>"; };
+		9CB644EE2C87AEF9005E26DE /* Singleton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Singleton.swift; sourceTree = "<group>"; };
 		9CFBD9F82C1F76F700E98CAD /* Prototype.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Prototype.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -65,21 +67,62 @@
 		9C34CEF12C0B8A95009891F7 /* DesignPatternsStudies */ = {
 			isa = PBXGroup;
 			children = (
-				9C34CEFB2C0B8AB1009891F7 /* Patterns */,
+				9CB644F02C87B1A1005E26DE /* CreationalPatterns */,
 				9C34CEF22C0B8A95009891F7 /* main.swift */,
 			);
 			path = DesignPatternsStudies;
 			sourceTree = "<group>";
 		};
-		9C34CEFB2C0B8AB1009891F7 /* Patterns */ = {
+		9CB644F02C87B1A1005E26DE /* CreationalPatterns */ = {
+			isa = PBXGroup;
+			children = (
+				9CB644F12C87B325005E26DE /* Builder */,
+				9CB644F22C87B3A2005E26DE /* Factory */,
+				9CB644F32C87B3B9005E26DE /* AbstractFactory */,
+				9CB644F42C87B3E3005E26DE /* Prototype */,
+				9CB644F52C87B3F8005E26DE /* Singleton */,
+			);
+			path = CreationalPatterns;
+			sourceTree = "<group>";
+		};
+		9CB644F12C87B325005E26DE /* Builder */ = {
 			isa = PBXGroup;
 			children = (
 				9C34CEF92C0B8AAA009891F7 /* Builder.swift */,
+			);
+			path = Builder;
+			sourceTree = "<group>";
+		};
+		9CB644F22C87B3A2005E26DE /* Factory */ = {
+			isa = PBXGroup;
+			children = (
 				9C34CEFC2C0BF423009891F7 /* Factory.swift */,
+			);
+			path = Factory;
+			sourceTree = "<group>";
+		};
+		9CB644F32C87B3B9005E26DE /* AbstractFactory */ = {
+			isa = PBXGroup;
+			children = (
 				9C34CEFE2C0BFD66009891F7 /* AbstractFactory.swift */,
+			);
+			path = AbstractFactory;
+			sourceTree = "<group>";
+		};
+		9CB644F42C87B3E3005E26DE /* Prototype */ = {
+			isa = PBXGroup;
+			children = (
 				9CFBD9F82C1F76F700E98CAD /* Prototype.swift */,
 			);
-			path = Patterns;
+			path = Prototype;
+			sourceTree = "<group>";
+		};
+		9CB644F52C87B3F8005E26DE /* Singleton */ = {
+			isa = PBXGroup;
+			children = (
+				9CB644EE2C87AEF9005E26DE /* Singleton.swift */,
+			);
+			path = Singleton;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -141,6 +184,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9C34CEFF2C0BFD66009891F7 /* AbstractFactory.swift in Sources */,
+				9CB644EF2C87AEF9005E26DE /* Singleton.swift in Sources */,
 				9CFBD9F92C1F76F700E98CAD /* Prototype.swift in Sources */,
 				9C34CEF32C0B8A95009891F7 /* main.swift in Sources */,
 				9C34CEFA2C0B8AAA009891F7 /* Builder.swift in Sources */,
