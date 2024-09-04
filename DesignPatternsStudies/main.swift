@@ -54,3 +54,10 @@ import Foundation
 //print(ivy)
 //print("##############")
 
+    // MARK: - Singleton
+
+//let mydb = SingletonDatabase() -> cant initialize
+let db = SingletonDatabase.instance
+print(db.getPopulation(name: "Tokyo"))
+print(db.getPopulation(name: "Sao Paulo"))
+print(SingletonDatabase.intanceCount)
