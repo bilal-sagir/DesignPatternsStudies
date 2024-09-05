@@ -14,6 +14,7 @@
 		9CB644EF2C87AEF9005E26DE /* Singleton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CB644EE2C87AEF9005E26DE /* Singleton.swift */; };
 		9CB645002C87D497005E26DE /* SingletonTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CB644FF2C87D497005E26DE /* SingletonTest.swift */; };
 		9CB645062C87D4C2005E26DE /* Singleton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CB644EE2C87AEF9005E26DE /* Singleton.swift */; };
+		9CB645082C8A1557005E26DE /* Monostate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CB645072C8A1557005E26DE /* Monostate.swift */; };
 		9CFBD9F92C1F76F700E98CAD /* Prototype.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CFBD9F82C1F76F700E98CAD /* Prototype.swift */; };
 /* End PBXBuildFile section */
 
@@ -38,6 +39,7 @@
 		9CB644EE2C87AEF9005E26DE /* Singleton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Singleton.swift; sourceTree = "<group>"; };
 		9CB644FD2C87D497005E26DE /* Test.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Test.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9CB644FF2C87D497005E26DE /* SingletonTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingletonTest.swift; sourceTree = "<group>"; };
+		9CB645072C8A1557005E26DE /* Monostate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Monostate.swift; sourceTree = "<group>"; };
 		9CFBD9F82C1F76F700E98CAD /* Prototype.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Prototype.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -134,6 +136,7 @@
 			isa = PBXGroup;
 			children = (
 				9CB644EE2C87AEF9005E26DE /* Singleton.swift */,
+				9CB645072C8A1557005E26DE /* Monostate.swift */,
 			);
 			path = Singleton;
 			sourceTree = "<group>";
@@ -239,6 +242,7 @@
 				9CB644EF2C87AEF9005E26DE /* Singleton.swift in Sources */,
 				9CFBD9F92C1F76F700E98CAD /* Prototype.swift in Sources */,
 				9C34CEF32C0B8A95009891F7 /* main.swift in Sources */,
+				9CB645082C8A1557005E26DE /* Monostate.swift in Sources */,
 				9C34CEFA2C0B8AAA009891F7 /* Builder.swift in Sources */,
 				9C34CEFD2C0BF423009891F7 /* Factory.swift in Sources */,
 			);

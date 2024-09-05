@@ -57,7 +57,20 @@ import Foundation
     // MARK: - Singleton
 
 //let mydb = SingletonDatabase() -> cant initialize
-let db = SingletonDatabase.instance
-print(db.getPopulation(name: "Tokyo"))
-print(db.getPopulation(name: "Sao Paulo"))
-print(SingletonDatabase.intanceCount)
+//let db = SingletonDatabase.instance
+//print(db.getPopulation(name: "Tokyo"))
+//print(db.getPopulation(name: "Sao Paulo"))
+//print(SingletonDatabase.intanceCount)
+
+    // MARK: - Monostate
+
+let m1 = MonostateCEO()
+let m2 = MonostateCEO()
+m1.name = "bi"
+m1.age = 12
+m2.name = "yu"
+m2.age = 99
+print(m1)
+print(m2)
+
+
