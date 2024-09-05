@@ -64,13 +64,32 @@ import Foundation
 
     // MARK: - Monostate
 
-let m1 = MonostateCEO()
-let m2 = MonostateCEO()
-m1.name = "bi"
-m1.age = 12
-m2.name = "yu"
-m2.age = 99
-print(m1)
-print(m2)
+//let m1 = MonostateCEO()
+//let m2 = MonostateCEO()
+//m1.name = "bi"
+//m1.age = 12
+//m2.name = "yu"
+//m2.age = 99
+//print(m1)
+//print(m2)
 
-
+    //MARK: - Adapter
+//
+//func drawPoint(_ p: Pointt) {
+//    print(".", terminator: "")
+//}
+//
+//let vectorObjects = [
+//    VectorRectangle(x: 1, y: 1, width: 10, height: 10),
+//    VectorRectangle(x: 3, y: 3, width: 6, height: 6)
+//]
+//func draw() {
+//    for vo in vectorObjects {
+//        for line in vo {
+//            let adapter = LineToPointAdapter(line)
+//            adapter.forEach({ drawPoint($0)}) // why sequence protocol confirmed
+//            //adapter.points.forEach({ drawPoint($0)})
+//        }
+//    }
+//}
+//draw()

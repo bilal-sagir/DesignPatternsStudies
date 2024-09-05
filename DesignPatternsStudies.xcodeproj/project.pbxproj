@@ -15,6 +15,7 @@
 		9CB645002C87D497005E26DE /* SingletonTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CB644FF2C87D497005E26DE /* SingletonTest.swift */; };
 		9CB645062C87D4C2005E26DE /* Singleton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CB644EE2C87AEF9005E26DE /* Singleton.swift */; };
 		9CB645082C8A1557005E26DE /* Monostate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CB645072C8A1557005E26DE /* Monostate.swift */; };
+		9CB6450C2C8A2519005E26DE /* Adapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CB6450B2C8A2519005E26DE /* Adapter.swift */; };
 		9CFBD9F92C1F76F700E98CAD /* Prototype.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CFBD9F82C1F76F700E98CAD /* Prototype.swift */; };
 /* End PBXBuildFile section */
 
@@ -40,6 +41,7 @@
 		9CB644FD2C87D497005E26DE /* Test.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Test.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9CB644FF2C87D497005E26DE /* SingletonTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingletonTest.swift; sourceTree = "<group>"; };
 		9CB645072C8A1557005E26DE /* Monostate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Monostate.swift; sourceTree = "<group>"; };
+		9CB6450B2C8A2519005E26DE /* Adapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Adapter.swift; sourceTree = "<group>"; };
 		9CFBD9F82C1F76F700E98CAD /* Prototype.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Prototype.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -83,6 +85,7 @@
 			isa = PBXGroup;
 			children = (
 				9CB644F02C87B1A1005E26DE /* CreationalPatterns */,
+				9CB645092C8A24B7005E26DE /* StructuralPatterns */,
 				9C34CEF22C0B8A95009891F7 /* main.swift */,
 			);
 			path = DesignPatternsStudies;
@@ -147,6 +150,22 @@
 				9CB644FF2C87D497005E26DE /* SingletonTest.swift */,
 			);
 			path = Test;
+			sourceTree = "<group>";
+		};
+		9CB645092C8A24B7005E26DE /* StructuralPatterns */ = {
+			isa = PBXGroup;
+			children = (
+				9CB6450A2C8A24D2005E26DE /* Adapter */,
+			);
+			path = StructuralPatterns;
+			sourceTree = "<group>";
+		};
+		9CB6450A2C8A24D2005E26DE /* Adapter */ = {
+			isa = PBXGroup;
+			children = (
+				9CB6450B2C8A2519005E26DE /* Adapter.swift */,
+			);
+			path = Adapter;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -239,6 +258,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9C34CEFF2C0BFD66009891F7 /* AbstractFactory.swift in Sources */,
+				9CB6450C2C8A2519005E26DE /* Adapter.swift in Sources */,
 				9CB644EF2C87AEF9005E26DE /* Singleton.swift in Sources */,
 				9CFBD9F92C1F76F700E98CAD /* Prototype.swift in Sources */,
 				9C34CEF32C0B8A95009891F7 /* main.swift in Sources */,
